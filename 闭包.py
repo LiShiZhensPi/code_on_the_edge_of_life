@@ -5,7 +5,7 @@
 def f1():
     hello='hello world'
     def f2():
-        print('hello')
+        print(hello)
     return f2
 
 f2_global = f1()
