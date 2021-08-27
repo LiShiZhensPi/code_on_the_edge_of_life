@@ -9,8 +9,6 @@ void hello(void)
     printf("hello\n");
 }
 
-void hello_2(void);
-
 int main(void)
 {
     void (*hello_p)(void);
