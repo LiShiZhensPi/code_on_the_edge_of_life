@@ -30,7 +30,7 @@ private:
     const string m_sPassword;
 };
 
-static const string message = "I mean and I think the reason it works that way is the people who designed C designed it at time when compliers had to be simple and the language had to be kind of neared towards what the output was. So when I read C,I know waht the assembly language will look like and that’s something I care about. ----Linus";
+static const string message = "Password is \'helloworld\'";
 
 int main()
 {
