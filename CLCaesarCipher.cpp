@@ -20,8 +20,8 @@ public:
 private:
     string Cipher(string password)
     {
-        for (int i = 0; i < password.length(); i++)
-            password[i] = (password[i] - 'a' + m_iCode) % 26 + 'a';
+        for (auto &c : password)
+            c = (c - 'a' + m_iCode) % 26 + 'a';
         return password;
     }
 
@@ -29,8 +29,6 @@ private:
     const int m_iCode;
     const string m_sPassword;
 };
-
-static const string message = "Password is \'helloworld\'";
 
 int main()
 {
@@ -41,7 +39,7 @@ int main()
     {
         if (CaesarCipher.CheckPassword(password))
         {
-            cout << message << endl;
+            cout << "Password is \'helloworld\'" << endl;
             return 0;
         }
         else
