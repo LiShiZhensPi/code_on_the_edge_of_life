@@ -1,13 +1,6 @@
-from cgi import test
-from ctypes import FormatError
-from email.headerregistry import HeaderRegistry
 from random import randint
-from unittest.mock import sentinel
-
-from requests import delete
 
 MAX_LEVEL = 10
-
 
 class Node:
     def __init__(self, key, value, level) -> None:
